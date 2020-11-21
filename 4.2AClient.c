@@ -45,7 +45,7 @@ int main(int argc, char*argv[])
 	puts("Data Send\n");
 
 	//Receive a reply from the server
-	if(recv(socket_desc, server_reply, 200, 0)<0)
+	if(recv(socket_desc, server_reply, 2000, 0)<0)
 	{
 		puts("recv failed");
 	}
